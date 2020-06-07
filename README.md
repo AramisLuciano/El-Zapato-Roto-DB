@@ -30,16 +30,14 @@ El SQL de las consultas solicitadas.
 (opcionalmente) el sql que crea y pobla el cubo de información.
 
 
-# Son cuatro Scripts que deben de ser aplicados en el siguiente orden
+# Como Aplicar los Scripts
 
-**1**
-*scriptCreaObjetosBasedeDatos* 
-**2**
-*scriptInsertaDeDatos*
-**3**
-*scriptCreaProducedimientosParaConsultas* 
-**4**
-*scriptEjemplosConsultasPorStoreProcedure* 
+Son cuatro Scripts que deben de ser aplicados en el siguiente orden:
+
+1.scriptCreaObjetosBasedeDatos
+2.scriptInsertaDeDatos
+3.scriptCreaProducedimientosParaConsultas
+4.scriptEjecutaConsultasPorStoreProcedure
 
 **Nota**
 *Todos estos archivos tiene extencion SQL.* 
