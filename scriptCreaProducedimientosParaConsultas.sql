@@ -48,6 +48,23 @@ select df.id as Factura,
    and p.id = @producto; 
 go
 
+-- Consulta de facturación de un producto en específico por código
+create procedure [dbo].[sp_facturacion_rango_fechas]
+@fechaDesde varchar(10), @fechaHasta varchar(10)
+as
+select f.id as NoFactura, 
+       ISNULL(c.NombreSocial, c.nombres + ' ' + c.apellidoPaterno  + ' ' + c.apellidoMaterno) as NombreCliente, 
+	   cast(f.fechaRegistro as date) as FechaFactura, 
+	   f.totalImpuestos,
+	   f.totalDescuento,
+	   f.subTotal,
+	   f.Total as totalFacturado
+  from facturas f,    
+	   clientes c
+ where f.clienteId = c.id
+   and cast(f.fechaRegistro as DATE) between @fechaDesde and @fechaHasta
+go
+
 
 -- Listado de clientes que han comprado al menos una vez
 create procedure sp_listado_clientes_que_han_comprado
