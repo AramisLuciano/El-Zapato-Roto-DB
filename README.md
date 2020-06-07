@@ -33,12 +33,11 @@ El SQL de las consultas solicitadas.
 # Como Aplicar los Scripts
 
 Son cuatro Scripts que deben de ser aplicados en el siguiente orden:
-|Orden                         |Script|
-|----------------|-------------------------------|-----------------------------|
-|1|`scriptCreaObjetosBasedeDatos`            |'Isn't this fun?'            |
-|2      |`scriptInsertaDeDatos`            |"Isn't this fun?"            |
-|3          |`scriptCreaProducedimientosParaConsultas`|-- is en-dash, 
-|4          |`scriptEjecutaConsultasPorStoreProcedure`|-- is en-dash, --- is em-dash|
+
+1 scriptCreaObjetosBasedeDatos
+2 scriptInsertaDeDatos      
+3 scriptCreaProducedimientosParaConsultas 
+4 scriptEjecutaConsultasPorStoreProcedure
 
 **Nota**
 *Todos estos archivos tiene extencion SQL.* 
