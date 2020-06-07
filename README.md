@@ -34,10 +34,10 @@ El SQL de las consultas solicitadas.
 
 Son cuatro Scripts que deben de ser aplicados en el siguiente orden:
 
-1 scriptCreaObjetosBasedeDatos
-2 scriptInsertaDeDatos      
-3 scriptCreaProducedimientosParaConsultas 
-4 scriptEjecutaConsultasPorStoreProcedure
+1_scriptCreaObjetosBasedeDatos
+2_scriptInsertaDeDatos
+3_scriptCreaProducedimientosParaConsultas
+4_scriptEjecutaConsultasPorStoreProcedure
 
 **Nota**
 *Todos estos archivos tiene extencion SQL.* 
